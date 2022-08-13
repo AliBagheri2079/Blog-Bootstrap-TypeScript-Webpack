@@ -1,19 +1,19 @@
 // import * as _ from 'lodash';
 
-//* Import our custom CSS
+//* Import Rout configuration
+import './routes/config';
+
+//* Import layout components
+import './components/Layout';
+
+//* Import Bootstrap and pooper
+import './vendors/bootstrap';
+
+//* Import GSAP animations
+import './vendors/gsap';
+
+//* Import main page styles
 import './assets/sass/main.scss';
 
-/**
- ** Will find #root element and set HTML to "Hello World!".
- */
-function editDom(): void {
-  const root = document.getElementById('root'); // Get root element.
-  if (root) {
-    root.innerHTML = '<h1 class="text-lowercase">DOM</h1>'; // Set html of the root element.
-  }
-}
-editDom();
-
-document.addEventListener('DOMContentLoaded', () => {
-  alert('ali bagheri here ....');
-});
+//? git push -u origin main
+//? lodash

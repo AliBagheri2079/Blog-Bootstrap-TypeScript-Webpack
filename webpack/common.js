@@ -1,12 +1,17 @@
 // Import Configuration.
-import { htmlWebpackPlugin, copyWebpackPlugin, eSLintWebpackPlugin } from './plugins';
+import {
+  htmlWebpackPlugin,
+  copyWebpackPlugin,
+  eSLintWebpackPlugin,
+  tsConfigPathsPlugin,
+} from './plugins';
 import { paths, config } from './configuration';
 import { scss, fonts, images, javaScript, typeScript } from './modules';
 
 /**
  * Entry point for the bundle.
  */
-const entry = [`${paths.src}/index.ts`, `${paths.src}/assets/sass/main.scss`];
+const entry = [`${paths.src}/index.ts`];
 
 /**
  * Set output file name and path.
@@ -20,7 +25,12 @@ const output = {
 /**
  * Shared plugins.
  */
-const plugins = [htmlWebpackPlugin, copyWebpackPlugin, eSLintWebpackPlugin];
+const plugins = [
+  htmlWebpackPlugin,
+  copyWebpackPlugin,
+  eSLintWebpackPlugin,
+  tsConfigPathsPlugin,
+];
 
 /**
  * Shared modules.

@@ -1,8 +1,22 @@
-//* Basic styles
-// @import "base";
+/* Basic styles*/
+@use 'base';
 
-//* bootsrap styles
-// @import 'vendors/bootstrap';
+/* Font face styles*/
+@import '../fonts/index.css';
 
-//* All utilities (eg: mixin, ..)
-// @import 'utilities/*';
+/* Bootstrap's Styles and placeholders*/
+@import './vendors';
+
+/* Bootstrap's Icons*/
+@import '../icons';
+
+/* All Components*/
+@import './components';
+
+/*
+? For debuging stylesheet
+* {
+    background: hsl(202, 90%, 80%) !important;
+    outline: 2px solid hsl(293, 90%, 79%) !important;
+}
+*/

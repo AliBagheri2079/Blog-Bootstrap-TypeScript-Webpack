@@ -1,2 +1,5 @@
-// Import all of Bootstrap's CSS
-@import "~bootstrap/scss/bootstrap";
+// Variable overrides first
+$success: hsl(142, 75%, 25%);
+
+// Then import Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';

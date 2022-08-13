@@ -1,0 +1,30 @@
+@import './bootstrap';
+
+/* bootstrap placeholders*/
+%parent-container {
+    @include make-container();
+}
+
+%grid-row {
+    @include make-row();
+    @include row-cols(1);
+}
+
+%grid-col {
+    @include make-col-ready();
+    @include make-col();
+}
+
+%flex-center {
+    @extend .d-flex,
+    .align-items-center,
+    .justify-content-center;
+}
+
+%custom-paragraph {
+    @extend .text-break,
+    .text-wrap;
+
+    text-align: justify;
+    text-indent: 1.5rem;
+}

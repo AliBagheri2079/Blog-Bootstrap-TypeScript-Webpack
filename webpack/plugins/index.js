@@ -6,3 +6,4 @@ export * from './eslint-webpack-plugin';
 export * from './mini-css-extract-plugin';
 export * from './purgecss-webpack-plugin';
 export * from './image-minimizer-webpack-plugin';
+export * from './tsconfig-paths-webpack-plugin';

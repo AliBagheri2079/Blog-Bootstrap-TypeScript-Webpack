@@ -1,0 +1,38 @@
+/* All utilities*/
+@use '../utilities'as utils;
+
+/* Main content styles*/
+.main {
+    &-wrapper {
+        @extend %parent-container;
+    }
+
+    &-content {
+        @extend %grid-row;
+        height: 85vh;
+
+        @include media-breakpoint-up(md) {
+            @include row-cols(2);
+        }
+    }
+}
+
+/* Location description*/
+.location {
+    &__description {
+        @extend %flex-center;
+    }
+
+    &__map {
+        >iframe {
+            @extend .w-100,
+            .h-100,
+            .rounded-end,
+            .py-1;
+
+            @include color-scheme(dark) {
+                filter: invert(85%);
+            }
+        }
+    }
+}

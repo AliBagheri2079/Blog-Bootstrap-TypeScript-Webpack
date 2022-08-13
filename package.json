@@ -1,7 +1,7 @@
 {
   "name": "blog-typescript-webpack",
   "title": "Typescript Webpack Blog",
-  "description": "A starter template/boilerplate built with TypeScript/JavaScript, Babel, Webpack 5, SASS, and Prettier.",
+  "description": "A starter template/boilerplate built with TypeScript/JavaScript, Babel, Webpack 5, SASS, Bootstrap and GSAP.",
   "main": "index.js",
   "url": "URL",
   "target": "web",
@@ -60,6 +60,7 @@
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.3",
     "ts-loader": "^9.3.0",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "typescript": "^4.7.4",
     "webpack": "^5.73.0",
     "webpack-bundle-analyzer": "^4.5.0",
@@ -68,13 +69,17 @@
     "webpack-merge": "^5.8.0"
   },
   "keywords": [
+    "SASS",
+    "Bootstrap",
     "Babel",
     "ES6",
     "ESLint",
+    "Prettier",
     "JavaScript",
     "Template",
     "TypeScript",
-    "Webpack 5"
+    "Webpack 5",
+    "GSAP"
   ],
   "browserslist": [
     "> 5%",
@@ -83,6 +88,8 @@
   ],
   "dependencies": {
     "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.2.0"
+    "animejs": "^3.2.1",
+    "bootstrap": "^5.2.0",
+    "gsap": "^3.10.4"
   }
 }

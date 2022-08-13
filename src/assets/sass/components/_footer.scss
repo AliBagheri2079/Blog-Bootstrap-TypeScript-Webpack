@@ -1,0 +1,21 @@
+/* Social media icon*/
+.social-media {
+    @extend %flex-center;
+    height: 15vh;
+
+    &__icon {
+        @extend .mx-5,
+        .px-2,
+        .fs-2;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            @extend .fs-1;
+        }
+    }
+}
+
+/* Custom Tooltip Styles*/
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-secondary);
+}

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const path = require('path');
 
 module.exports = {
@@ -28,9 +29,14 @@ module.exports = {
     },
   },
   rules: {
-    indent: ['error', 2, { SwitchCase: 1 }],
-    quotes: ['error', 'single', 'avoid-escape'],
-    'prettier/prettier': ['error', require('./.prettierrc')],
+    // indent: ['error', 2, { SwitchCase: 1 }],
+    // quotes: ['error', 'single', 'avoid-escape'],
+    'prettier/prettier': ['error',{ endOfLine: 'auto' },{ usePrettierrc: true }],
+    'import/no-extraneous-dependencies': 'off',
+    'import/prefer-default-export': 'off',
+    'no-confusing-arrow': 'off',
+    'linebreak-style': 'off',
+    'no-plusplus': 'off',
   },
   overrides: [
     {

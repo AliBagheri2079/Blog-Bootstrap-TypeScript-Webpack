@@ -10,6 +10,7 @@ A starter frontend boilerplate built with:
 - [Lodash](https://lodash.com/)
 - [Sass](https://sass.org/)
 - [Bootstrap](https://getbootstrap.com/)
+- [GSAP](https://greensock.com/gsap/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [PurgeCSS](https://purgecss.com/)
@@ -49,6 +50,7 @@ src
 public
 ├── favicon.ico
 ├── index.html
+├── about.html
 └── ...
 ```
 

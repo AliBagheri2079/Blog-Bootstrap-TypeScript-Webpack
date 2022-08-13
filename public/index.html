@@ -9,82 +9,139 @@
 
   <!--* Webpage information metadata -->
   <meta name="author" content="Ali Bagheri" />
-  <meta name="keywords" content="وبلاگ، تصاویر، متن و ..." />
-  <meta name="description"
-    content="چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد." />
+  <meta name="keywords" content="وبلاگ، تصاویر، متن" />
+  <meta name="description" content="
+    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی می باشد.
+    کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده را می طلبد تا با نرم افزارها ایجاد کرد.
+    در این صورت می توان امید داشت که سخت تایپ به پایان رسد اساسا مورد استفاده قرار گیرد.
+  " />
 
   <!--* Color scheme, favicon and styles -->
   <meta name="color-scheme" content="light dark" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./assets/favicon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
 
   <!--* Title -->
-  <title>خانه | TypeScript Webpack</title>
+  <title>خانه | وبلاگ</title>
 </head>
 
 <body>
   <!--* No script message -->
   <noscript>
-    This website will not work without JavaScript, please enable JavaScript to
-    view.
+    این وبلاگ بدون جاوااسکریپت کار نمی کند، لطفا جاوااسکریپت مرورگر را فعال کنید.
   </noscript>
   <!--* No script message end -->
 
-  <!--* Root -->
-  <div id="root" class="root"></div>
-  <!--* Root end -->
+  <!--* Header -->
+  <header class="header-wrapper">
+    <div class="header-content">
+      <!--* Header navbar -->
+      <nav class="header-navbar col">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon bi bi-justify-right"></span>
+          </button>
 
-  <!--
-  <header>
-    <h1 class="logo">___</h1>
-    <nav>
-      <ul>
-        <li>___</li>
-        <li>___</li>
-        <li>___</li>
-        <li>___</li>
-      </ul>
-    </nav>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">وبلاگ شخصی</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">خانه</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/">توضیحات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="/">نظرات</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a class="navbar-brand" href="/">
+            <my-logo></my-logo>
+          </a>
+        </div>
+      </nav>
+      <!--* Header navbar end -->
+
+      <!--* Header items -->
+      <section class="header-items col">
+        <div class="header-items__content">
+          <!--* Header titles -->
+          <div class="title-wrapper col">
+            <div class="title-items container-fluid">
+              <div class="head-title-anime">
+                <h1 class="title__head">
+                  فقط قهوه فروشی نیست، اینجا
+                  <strong class="typing-demo">استارباکس</strong>
+                  است.
+                </h1>
+              </div>
+
+              <div class="head-title-anime">
+                <my-description>
+                  <div slot="description">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                    نیاز
+                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                    ایجاد
+                    کرد.
+                  </div>
+                </my-description>
+              </div>
+            </div>
+          </div>
+          <!--* Header titles end -->
+
+          <!--* Header image slider -->
+          <div class="slider-wrapper col">
+            <div class="slider-content container-fluid" id="slider-content">
+            </div>
+          </div>
+          <!--* Header image slider end -->
+        </div>
+      </section>
+      <!--* Header items end -->
+    </div>
   </header>
+  <!--* Header end -->
 
-  <main>
-    <section class="about-me">
-      <article>
-        Lorem ipsum 100___
-      </article>
-    </section>
+  <!--* location -->
+  <main class="main-wrapper">
+    <div class="main-content location">
+      <section class="location__description">
+        <my-address>
+          <div slot="address" class="address">
+          </div>
+        </my-address>
+      </section>
 
-    <section class="contact-me">
-      ___
-      <a href="#">___</a>
-      ___
-      <p>Japanese example: <span lang="ja">ご飯が熱い。</span></p>
-      <p dir="auto">هذه الفقرة باللغة العربية ، لذا يجب الانتقال من اليمين إلى اليسار.</p>
-    </section>
-
-    <section>
-      <figure>
-        -- Default. Loads an image immediately --
-        <img src="..." alt="..." loading="eager">
-        -- Defer loading of images until some conditions are met --
-        <img src="..." alt="..." loading="lazy">
-
-        <figcaption>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, porro enim vero qui officia unde
-          ducimus earum. Libero aliquid quia esse sint nobis animi soluta quod. Modi a maiores laboriosam.
-        </figcaption>
-      </figure>
-    </section>
-
-    <aside class="address">___</aside>
+      <section class="location__map" id="location-map">
+      </section>
+    </div>
   </main>
+  <!--* location end -->
 
-  <footer>___</footer>
-  ! -->
+  <!--* footer -->
+  <footer class="social-media" id="social-media">
+  </footer>
+  <!--* footer end -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
