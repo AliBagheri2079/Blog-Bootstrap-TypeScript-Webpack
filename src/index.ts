@@ -14,5 +14,3 @@ import './vendors/gsap';
 
 //* Import main page styles
 import './assets/sass/main.scss';
-
-//? git push -u origin main
