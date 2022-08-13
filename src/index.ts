@@ -16,4 +16,3 @@ import './vendors/gsap';
 import './assets/sass/main.scss';
 
 //? git push -u origin main
-//? lodash
