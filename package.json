@@ -1,5 +1,5 @@
 {
-  "name": "blog-typescript-webpack",
+  "name": "blog-bootstrap-typescript-webpack",
   "title": "Typescript Webpack Blog",
   "description": "A starter template/boilerplate built with TypeScript/JavaScript, Babel, Webpack 5, SASS, Bootstrap and GSAP.",
   "main": "index.js",
